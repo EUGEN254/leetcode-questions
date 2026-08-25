@@ -9,24 +9,24 @@ nums = [2,7,11,15], target = 9
 Output: [0,1]
 */
 
-// var twoSum = function (nums, target) {
-//   //   for i from 0 to end of  array:
-//   //      for j from i+1 to end of array:
-//   //          if nums[i] + nums[j] == target:
-//   //             return [i,j]
+var twoSum = function (nums, target) {
+  //   for i from 0 to end of  array:
+  //      for j from i+1 to end of array:
+  //          if nums[i] + nums[j] == target:
+  //             return [i,j]
 
-//   for (let i = 0; i < nums.length; i++) {
-//     for (let j = i + 1; j < nums.length; j++) {
-//       if (nums[i] + nums[j] === target) {
-//         return [i, j];
-//       }
-//     }
-//   }
-// };
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+};
 
-// console.log(twoSum([2, 7, 11, 15], 9));
-// console.log(twoSum([3, 2, 4], 6));
-// console.log(twoSum([3, 3], 6));
+console.log(twoSum([2, 7, 11, 15], 9));
+console.log(twoSum([3, 2, 4], 6));
+console.log(twoSum([3, 3], 6));
 
 function twoSum(nums, target) {
   let map = {};//this is an object element there are key  valu pari
